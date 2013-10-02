@@ -1,6 +1,12 @@
 <?php
-	$dbhost = '195.8.209.74';
-	$dbuser = 'orangeappDBusr';
-	$dbpass = '123456';
-	$dbname = 'orangeappDB';
+/*
+Database:	citrussapp_db
+Host:	localhost
+Username:	citrussapp_admin
+Password:	g5hsR4zv
+*/
+	$dbhost = 'localhost';
+	$dbuser = 'citrussapp_admin';
+	$dbpass = 'g5hsR4zv';
+	$dbname = 'citrussapp_db';
 ?>

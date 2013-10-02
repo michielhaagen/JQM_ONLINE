@@ -1,4 +1,4 @@
-var serviceURL = "http://localhost/directory/services/";
+var serviceURL = "http://www.haageninternet.nl/klanten/api/";
 
 var employees;
 
