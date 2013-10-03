@@ -20,12 +20,41 @@
     </div>		
 
 </div>
-
+<p><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mobile-1.0rc1.min.js"></script>
 <script src="js/employeelist.js"></script>
 <script src="js/employeedetails.js"></script>
 <script src="js/reportlist.js"></script>
+
+<script>
+$( "#scan" ).click(function() {	
+        var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+
+        scanner.scan( function (result) { 
+
+            alert("We got a barcode\n" + 
+            "Result: " + result.text + "\n" + 
+            "Format: " + result.format + "\n" + 
+            "Cancelled: " + result.cancelled);  
+
+           console.log("Scanner result: \n" +
+                "text: " + result.text + "\n" +
+                "format: " + result.format + "\n" +
+                "cancelled: " + result.cancelled + "\n");
+            document.getElementById("info").innerHTML = result.text;
+            console.log(result);
+            /*
+            if (args.format == "QR_CODE") {
+                window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
+            }
+            */
+
+        }, function (error) { 
+            console.log("Scanning failed: ", error); 
+        } );
+});
+</script>
 
 </body>
 
