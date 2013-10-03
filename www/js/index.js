@@ -63,7 +63,7 @@ var app = {
             "Format: " + result.format + "\n" + 
             "Cancelled: " + result.cancelled);  
             
-            $.getJSON('http://www.haageninternet.nl/klanten/api/insertemployee.php');
+            $.getJSON('http://www.haageninternet.nl/klanten/api/insertemployee.php?code='+result.text+'&userID=1&lijst=1');
 	$.getJSON(serviceURL + 'getemployees.php', function(data) {
 		$('#employeeList li').remove();
 		employees = data.items;
