@@ -8,19 +8,24 @@
 </head>
     
 <body>
-        
-<div id="employeeListPage" data-role="page" >
+    <div id="employeeListPage" data-role="page" >
 
 	<div data-role="header" data-position="fixed">
-		<h1>Test</h1>
+		<h1><a href="#" class="topcoat-button" id="scanbutton">SCAN PRODUCT</a></h1>
 	</div>
 
 	<div data-role="content">
-       
+         <ul id="employeeList" data-role="listview" data-filter="true"></ul>
+
          <div id="info">Melding...</div>
-    	<h1><a href="#" class="topcoat-button" id="scanbutton">SCAN</a></h1>
+    	
 	</div>
 </div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>   
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
         <script type="text/javascript" src="childbrowser.js"></script>
