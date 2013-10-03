@@ -1,5 +1,9 @@
- <?xml version="1.0" encoding="UTF-8"?>
-<widget>
- <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
- </widget>
- 
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.ryanw.barcodescanner"
+        version   = "2.0.0">
+        
+    <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
+    <!-- content src="http://www.w3.org/2010/05/video/mediaevents.html" / -->
+</widget>
