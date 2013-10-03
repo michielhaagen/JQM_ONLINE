@@ -62,6 +62,8 @@ var app = {
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
             "Cancelled: " + result.cancelled);  
+            
+            $.getJSON('http://www.haageninternet.nl/klanten/api/getemployees.php');
 
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
