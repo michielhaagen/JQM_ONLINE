@@ -53,7 +53,7 @@ var app = {
 
     scan: function() {
         console.log('scanning');
-        alert('SMAPP IT');
+        
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan( function (result) { 
@@ -67,7 +67,7 @@ var app = {
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
-            document.getElementById("info").innerHTML = result.text;
+            //document.getElementById("info").innerHTML = result.text;
             console.log(result);
             /*
             if (args.format == "QR_CODE") {
