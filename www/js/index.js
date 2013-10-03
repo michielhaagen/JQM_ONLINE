@@ -68,7 +68,7 @@ var app = {
 		$('#employeeList li').remove();
 		employees = data.items;
 		$.each(employees, function(index, employee) {
-			$('#employeeList').append('<li><a href="employeedetails.html?id=' + employee.id + '">' +
+			$('#employeeList').append('<li><a href="employeedetails.html?id=' + employee.ArtikelID + '">' +
 					'<img src="pics/' + employee.aAfbeelding + '"/>' +
 					'<h4>' + employee.aNaam + '</h4>' +
 					'<span class="ui-li-count">' + employee.Aantal + '</span></a></li>');
