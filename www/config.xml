@@ -4,16 +4,5 @@
         id        = "com.phonegap.ryanw.barcodescanner"
         version   = "2.0.0">
 
-<gap:splash src="http://www.haageninternet.nl/klanten/api/images/images/splashscreen.png" />
-        
-<icon src="http://www.haageninternet.nl/klanten/api/images/icon-57.png" gap:platform="ios" width="57" height="57" />
-<icon src="http://www.haageninternet.nl/klanten/api/images/images/icon-72.png" gap:platform="ios" width="72" height="72" />
-<icon src="http://www.haageninternet.nl/klanten/api/images/images/icon-114.png" gap:platform="ios" width="114" height="114" />
-
-<icon src="http://www.haageninternet.nl/klanten/api/images/images/splashscreen.png" gap:platform="android" gap:density="ldpi" />
-<icon src="http://www.haageninternet.nl/klanten/api/images/images/splashscreen.png" gap:platform="android" gap:density="mdpi" />
-<icon src="http://www.haageninternet.nl/klanten/api/images/images/splashscreen.png" gap:platform="android" gap:density="hdpi" />
-<icon src="http://www.haageninternet.nl/klanten/api/images/images/splashscreen.png" gap:platform="android" gap:density="xhdpi" />  
-    <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
     <!-- content src="http://www.w3.org/2010/05/video/mediaevents.html" / -->
 </widget>
