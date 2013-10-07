@@ -21,7 +21,7 @@ var dgram = require('dgram');
  
 var WifiBox = function (ip, port) {
     this.client = dgram.createSocket('udp4');
-    const default_ip = '192.168.1.100';
+    const default_ip = '10.10.100.254';
     const default_port = 50000;
     this.ip = (ip != undefined && ip.length > 6) ? ip : default_ip;
     this.port = (port != undefined && port > 0) ? port : default_port;
